@@ -8,7 +8,7 @@ import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 
-public class Ex2 {
+public class Ex3 {
     public static void main(String[] args) {
         Customer customer1 = new Customer(635262L, "Giulia", 2);
         Customer customer2 = new Customer(66636L, "Giuseppe", 1);
@@ -34,10 +34,6 @@ public class Ex2 {
 
         Order order1 = new Order(55625L, "in consegna", LocalDate.now(), LocalDate.now().plusDays(10), listOfProducts1, customer1);
         Order order2 = new Order(55625L, "in consegna", LocalDate.now(), LocalDate.now().plusDays(10), listOfProducts2, customer2);
-
-        Order[] orderArray = {order1, order2};
-        List<Order> orders = Arrays.stream(orderArray).toList();
-
 
     }
 }
